@@ -1,9 +1,10 @@
 
 public class Car {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public int x;
+	public int y;
+	
+	public Car(int x, int y) {
+		this.x=x;
+		this.y=y;
 	}
-
 }
