@@ -10,7 +10,7 @@ public class MainFrame extends JFrame {
 	public MainFrame()
 	{
 		setTitle("Play Car");
-		setSize(800, 600);
+		setSize(800, 700);
 		setVisible(true);
 		
 		add(new Screen());
