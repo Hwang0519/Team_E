@@ -6,13 +6,6 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 
-public class DodgeGame {
-	public static void main(String[] args) {
-		DodgeFrame frame = new DodgeFrame();
-		Thread thread = new Thread(frame);
-		thread.start();
-	}
-}
 
 class DodgeFrame extends Frame implements Runnable {
 	public static final int WIDTH = 800, HEIGHT = 800;
@@ -35,7 +28,7 @@ class DodgeFrame extends Frame implements Runnable {
 		addWindowListener(new WindowAdapter(){
 			public void windowClosing(WindowEvent we){
 				dispose();
-				System.exit(0);
+				new Main();
 			}
 		});
 	}
