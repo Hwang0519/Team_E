@@ -62,6 +62,7 @@ public class Main extends JFrame {
             HardFrame frame = new HardFrame();
             Thread thread = new Thread(frame);
             thread.start();
+          
             
          }
       });
@@ -83,6 +84,7 @@ public class Main extends JFrame {
       		EasyFrame frame = new EasyFrame();
             Thread thread = new Thread(frame);
             thread.start();
+           
       	}
       });
       btnNewButton_2.setBounds(81, 90, 111, 23);
@@ -94,6 +96,7 @@ public class Main extends JFrame {
       		NomalFrame frame = new NomalFrame();
             Thread thread = new Thread(frame);
             thread.start();
+           
       	}
       });
       btnNewButton_3.setBounds(81, 140, 111, 23);
@@ -105,6 +108,7 @@ public class Main extends JFrame {
       		VeryHardFrame frame = new VeryHardFrame();
             Thread thread = new Thread(frame);
             thread.start();
+            
       	}
       });
       btnNewButton_4.setBounds(81, 232, 111, 23);
@@ -114,7 +118,7 @@ public class Main extends JFrame {
       btnNewButton_5.addActionListener(new ActionListener() {
       	public void actionPerformed(ActionEvent e) {
       		new Rule();
-           
+      		           
       	}
       });
       btnNewButton_5.setBounds(208, 140, 91, 23);
@@ -124,6 +128,7 @@ public class Main extends JFrame {
       btnNewButton_6.addActionListener(new ActionListener() {
       	public void actionPerformed(ActionEvent e) {
       		new P2mode();
+      		
       	}
       });
       btnNewButton_6.setBounds(81, 277, 111, 23);
