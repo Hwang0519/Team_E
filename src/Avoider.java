@@ -1,6 +1,7 @@
 import java.awt.Color;
 import java.awt.Graphics;
 
+
 public class Avoider extends DodgeObject{
 	private Color color = Color.RED;
 	

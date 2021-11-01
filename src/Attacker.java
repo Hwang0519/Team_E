@@ -16,11 +16,11 @@ public class Attacker extends DodgeObject{
 	}
 	public void moveSelf(){
 		pos.plus(velocity);
-		if(pos.getX()<0 || pos.getX()>DodgeFrame.WIDTH){
+		if(pos.getX()<0 || pos.getX()>1000){
 			velocity.flopX();
 			pos.plus(new Vector(velocity.getX()*2, 0));
 		}
-		if(pos.getY()<0 || pos.getY()>DodgeFrame.HEIGHT){
+		if(pos.getY()<0 || pos.getY()>1000){
 			velocity.flopY();
 			pos.plus(new Vector(0, velocity.getY()*2));
 		}

@@ -13,10 +13,10 @@ public class AvoiderPilotPlayer extends AvoiderPilot implements KeyListener{
 		K_RIGHT=KeyEvent.VK_RIGHT;
 	
 	public AvoiderPilotPlayer(){
-		this(null, null);
+		this(null, null, null, null);
 	}
-	public AvoiderPilotPlayer(Avoider a, ArrayList<Attacker> as) {
-		super(a, as);
+	public AvoiderPilotPlayer(Avoider a, ArrayList<Attacker> as, ArrayList<HPItem> ss, ArrayList<AttackerNew> pp) {
+		super(a, as, ss,pp);
 		events = new Queue(200);
 		pressed = new boolean[4];
 	}

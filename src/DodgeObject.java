@@ -95,13 +95,13 @@ public abstract class DodgeObject {
 	abstract public void drawSelf(Graphics g);
 	protected boolean invalidPos(){
 		return
-			pos.getX()<0 || pos.getX()>DodgeFrame.WIDTH
-		||	pos.getY()<0 || pos.getY()>DodgeFrame.HEIGHT;
+			pos.getX()<0 || pos.getX()>NomalFrame.WIDTH
+		||	pos.getY()<0 || pos.getY()>NomalFrame.HEIGHT;
 	}
 	protected void makeValidPos(){
 		if(pos.getX()<0) pos.setX(0);
-		else if(pos.getX()>DodgeFrame.WIDTH) pos.setX(DodgeFrame.WIDTH);
+		else if(pos.getX()>NomalFrame.WIDTH) pos.setX(NomalFrame.WIDTH);
 		if(pos.getY()<0) pos.setY(0);
-		else if(pos.getY()>DodgeFrame.HEIGHT) pos.setY(DodgeFrame.HEIGHT);
+		else if(pos.getY()>NomalFrame.HEIGHT) pos.setY(NomalFrame.HEIGHT);
 	}
 }
