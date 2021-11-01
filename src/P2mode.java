@@ -33,6 +33,7 @@ public class P2mode extends JFrame {
 				P2Frame frame = new P2Frame();
 	            Thread thread = new Thread(frame);
 	            thread.start();
+	            dispose();
 			}
 		});
 		btnNewButton.setBounds(77, 145, 95, 23);
@@ -44,6 +45,7 @@ public class P2mode extends JFrame {
 				P2HardFrame frame = new P2HardFrame();
 	            Thread thread = new Thread(frame);
 	            thread.start();
+	            dispose();
 			}
 		});
 		btnNewButton_1.setBounds(247, 145, 95, 23);

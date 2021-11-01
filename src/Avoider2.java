@@ -3,7 +3,7 @@ import java.awt.Graphics;
 
 
 public class Avoider2 extends DodgeObject{
-	private Color color = Color.GREEN;
+	private Color color = Color.PINK;
 	
 	public Avoider2(double x, double y){
 		super(x, y, 6);

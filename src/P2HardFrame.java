@@ -37,7 +37,7 @@ class P2HardFrame extends Frame implements Runnable {
 		addWindowListener(new WindowAdapter(){
 			public void windowClosing(WindowEvent we){
 				dispose();
-				new Main();
+				new P2mode();
 			}
 		});
 	}
@@ -152,13 +152,7 @@ class P2HardFrame extends Frame implements Runnable {
 			}
 			if(pilots.size()==0) {
 				
-				if(isActive()) {
-				long afterTime = System.nanoTime();
-				Time = ((afterTime-beforeTime)/1000000000);
-
-	            JOptionPane.showMessageDialog(this,Time +"초 생존하였습니다 ");
-				break;
-				}
+				
 			}
 			for(AvoiderPilot ap: pilots){
 				if(!ap.event()) {

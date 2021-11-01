@@ -38,7 +38,7 @@ class P2Frame extends Frame implements Runnable {
 		addWindowListener(new WindowAdapter(){
 			public void windowClosing(WindowEvent we){
 				dispose();
-				new Main();
+				new P2mode();
 			    
 			}
 		});
