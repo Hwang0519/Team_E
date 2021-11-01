@@ -123,9 +123,7 @@ public class Main extends JFrame {
       JButton btnNewButton_6 = new JButton("2P");
       btnNewButton_6.addActionListener(new ActionListener() {
       	public void actionPerformed(ActionEvent e) {
-      		P2Frame frame = new P2Frame();
-            Thread thread = new Thread(frame);
-            thread.start();
+      		new P2mode();
       	}
       });
       btnNewButton_6.setBounds(81, 277, 111, 23);
