@@ -120,7 +120,7 @@ public class Main extends JFrame {
       btnNewButton_5.setBounds(208, 140, 91, 23);
       panel.add(btnNewButton_5);
       
-      JButton btnNewButton_6 = new JButton("2P Mode");
+      JButton btnNewButton_6 = new JButton("2P");
       btnNewButton_6.addActionListener(new ActionListener() {
       	public void actionPerformed(ActionEvent e) {
       		new P2mode();
